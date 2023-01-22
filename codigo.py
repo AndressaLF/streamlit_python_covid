@@ -14,10 +14,10 @@ variante = st.sidebar.selectbox('Escolha a variante', ['Todas'] + variantes)
 
 
 if (pais != 'Todos'):
-    st.header('Mostrando resultado de ' + pais)
+    st.title('Mostrando resultado de ' + pais)
     df = df[df['location'] == pais]
 else:
-    st.header('Mostrando resultado para todos os países')
+    st.title('Mostrando resultado para todos os países')
     
 if (variante != 'Todas'):
     st.subheader('Mostrando resultado para variante ' + variante)
